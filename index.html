@@ -436,22 +436,22 @@
             </li>
           </ul>
         </div>
-        
-          <form class="footer-form">
-            <fieldset class="footer-fieldset">
-              <legend class="footer-form-title">підпишіться на розсилку</legend>
-              <div class="email-input">
-                <label class="footer-email-label" for="user-email">E-mail</label>
-                <input class="footer-input" type="email" name="email" id="user-email" />
-              </div>
-            </fieldset>
+
+        <form class="footer-form" autocomplete="off  novalidate>
+          <p class="footer-form-title">підпишіться на розсилку</p>
+          <div class="footer-form-container">
+            <div class="email-input">
+              <label class="footer-email-label" for="user-email">E-mail</label>
+              <input class="footer-input" type="email" name="email" id="user-email" />
+            </div>
+
             <button class="button footer-button" type="submit">
               Підписатися<svg class="send-icon" width="24" height="24">
                 <use href="./imges/icons.svg#icon-send"></use>
               </svg>
             </button>
-          </form>
-        
+          </div>
+        </form>
       </div>
     </footer>
     <div class="beckdrop is-hidden" data-modal>
@@ -500,7 +500,12 @@
             ></textarea>
           </fieldset>
           <fieldset class="fieldset-checkbox">
-            <input class="modal-checkbox" type="checkbox" name="condition" id="user-condition" />
+            <input
+              class="modal-checkbox visually-hidden"
+              type="checkbox"
+              name="condition"
+              id="user-condition"
+            />
             <svg class="check-icon" width="16" height="15">
               <use href="./imges/icons.svg#icon-icon-checked"></use>
             </svg>

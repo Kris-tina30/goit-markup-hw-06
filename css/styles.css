@@ -535,10 +535,8 @@ align-items: baseline;
 
 .footer-form {
     display: flex;
-    align-items: flex-end;
+    flex-direction: column;
     margin-left: auto;
-    margin-top: 0;
-
 }
 
 .email-input {
@@ -548,14 +546,20 @@ align-items: baseline;
 }
 .footer-form-title {
     font-weight: 700;   
-    line-height: 16px;
+    font-size: 16px;
     line-height: 1.1;   
     text-transform: uppercase;
     color: var(--color-brand);
     margin-bottom: 20px;
-    
-
+    margin-top: 0;
 }
+
+.footer-form-container {
+display: flex;
+flex-direction: row;
+align-items: center;
+}
+
 label.footer-email-label {
     position: absolute;
     left: 16px;
@@ -567,7 +571,6 @@ label.footer-email-label {
     letter-spacing: 0.03em;
     margin-bottom: 0;
     
-
 }
 .footer-input {
     width: 358px;
@@ -576,8 +579,8 @@ label.footer-email-label {
     border: 1px solid rgba(255, 255, 255, 0.3);
     border-radius: 4px;
     outline: none;
+    color: var(--color-brand);
     
-
 }
 .send-icon {
     fill: var(--color-brand);
@@ -861,7 +864,6 @@ border-color: var(--color-accent);
 /* check-box */
 
 .fieldset-checkbox {
-    
     display: flex;
     align-items: center;
     margin-bottom: 30px;
@@ -870,13 +872,13 @@ border-color: var(--color-accent);
  .modal-checkbox { 
      appearance: none;
      -webkit-appearance: none;
-    -moz-appearance: none
+    -moz-appearance: none;
 }
 
 
 .modal-checkbox:checked + .check-icon {
-background-color: var(--color-accent);
-border: none;
+   background-color: var(--color-accent);
+   border: none;
 }
 
 .label-condition {
@@ -887,7 +889,6 @@ border: none;
    letter-spacing: 0.03em;
    margin-bottom: 0;
    padding-left: 23px;
-   
 }
 
 .check-icon {
@@ -902,16 +903,7 @@ border: none;
     color: var(--color-accent);
     text-decoration: underline;
 }
-/* .link-confirm::after {
-position: absolute;
-left: 0;
-bottom: 0;
-content: '';
-display: block;
-width: 100%;
-border: 0.05px solid var(--color-accent);
-}position: relative;
- */
+
 
 .button-form {
     width: 200px;
